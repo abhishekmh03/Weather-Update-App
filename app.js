@@ -1,4 +1,4 @@
-const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=adgaon&appid=0d6bce28fea5679bc7bf2d5801df5a7f&units=metric"
+const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=adgaon&appid="your api key"&units=metric"
 const cityName = document.querySelector(".city-name");
 const btn = document.querySelector(".btn");
 const cityNameShow = document.querySelector(".city_name");
@@ -15,7 +15,7 @@ btn.addEventListener("click", async ()=>{
         alert("please enter a city name");
         return;
     }
-   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0d6bce28fea5679bc7bf2d5801df5a7f&units=metric`;
+   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid="your api key"&units=metric`;
 
    try{
    let response = await fetch(url);
